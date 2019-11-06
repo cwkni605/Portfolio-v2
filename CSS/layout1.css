@@ -9,17 +9,15 @@
         url('fonts/Open-SANS/OpenSans-Bold.ttf') format('truetype');
 }
 
-html{
-    font-family: 'main';
-}
-
 body{
     margin: 0px;
     font-family: 'main';
 }
 
 @media only screen and (min-width: 0px){
-
+    html{
+        background: blue;
+    }
 }
 
 @media only screen and (min-width: 768px){

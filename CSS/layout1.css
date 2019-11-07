@@ -15,9 +15,7 @@ body{
 }
 
 @media only screen and (min-width: 0px){
-    html{
-        background: blue;
-    }
+
 }
 
 @media only screen and (min-width: 768px){
@@ -26,4 +24,13 @@ body{
 
 @media only screen and (min-width: 992px){
     
+    header{
+        margin: 3%;
+        background: green;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    header li{
+        
+    }
 }

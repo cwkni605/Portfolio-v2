@@ -31,6 +31,8 @@
 
 @media only screen and (min-width: 992px){
     
+    /*this is the desktop header*/
+
     header{
         font-family: 'righteous';
         margin: 2%;
@@ -41,11 +43,30 @@
     
     header li{
         display: inline;
-        margin: 20px;
+        margin: 0px;
+        padding: 0px;
     }
 
     header li a{
         color: rgb(0, 0, 99);
         text-decoration: none;
+        padding: 20px;
+    }
+
+    header li a:hover{
+        border-radius: 5px;
+        background: rgba(211, 211, 211,0.2);
+    }
+
+    /*this is the desktop footer*/
+
+    footer{
+        border-radius: 5px;
+        font-family: 'righteous';
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        background: rgb(255, 165, 0, 0.5);
+        color: rgb(68, 68, 68);
     }
 }

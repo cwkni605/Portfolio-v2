@@ -1,0 +1,28 @@
+@font-face{
+    font-family: 'plaza';
+    src:
+        url('fonts/Plaza/Plaza\ Regular.ttf') format('truetype');  
+} 
+@font-face{
+    font-family: 'open';
+    src: 
+        url('fonts/Open-SANS/OpenSans-Bold.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'righteous';
+    src: 
+        url('fonts/Righteous/Righteous-Regular.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'web';
+    src: 
+        url('fonts/TitilliumWeb/TitilliumWeb-Regular.ttf') format('truetype');
+}
+
+body{
+    margin: 0px;
+    font-family: 'plaza';
+    background: linear-gradient(red , orange , green 10% , orange , red);
+}

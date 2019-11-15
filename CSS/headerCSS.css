@@ -58,6 +58,14 @@
         background: rgba(211, 211, 211,0.2);
     }
 
+    /*body background and font*/
+
+    body{
+        margin: 0px;
+        font-family: 'plaza';
+        background: linear-gradient(red , orange , green 10% , orange , red);
+    }
+
     /*this is the desktop footer*/
 
     footer{

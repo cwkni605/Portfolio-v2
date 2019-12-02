@@ -21,3 +21,44 @@
         url('fonts/TitilliumWeb/TitilliumWeb-Regular.ttf') format('truetype');
 }
 
+@media only screen and (min-width: 0px){
+
+}
+
+@media only screen and (min-width: 768px){
+
+}
+
+@media only screen and (min-width: 992px){
+
+    .body{
+        width: 90%;
+        margin: auto;
+    }
+
+    .body > div{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .body > div img{
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .body > div:nth-of-type(odd){
+        border-radius: 5px;
+        clear: both;
+        width: 49%;
+        float: left;
+        background: blue;
+    }
+
+    .body > div:nth-of-type(even){
+        border-radius: 5px;
+        width: 49%;
+        float: right;
+        background: red;
+    }
+
+}

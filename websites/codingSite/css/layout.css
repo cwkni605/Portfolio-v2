@@ -1,0 +1,854 @@
+@font-face{
+    font-family: 'Plaza';
+    src:
+        url('fonts/Plaza/Plaza\ Regular.ttf') format('truetype');  
+} 
+@font-face{
+    font-family: 'main';
+    src: 
+        url('fonts/Open-SANS/OpenSans-Bold.ttf') format('truetype');
+}
+/*WhimpyWhimpyWhimpy_____________________________________________________________________________________________________________________*/
+@media only screen and (min-width: 0px){
+    body{
+        margin: 0px;
+        font-family: 'main';
+    }
+    
+    /*header nav stuff_____________________________________________*/
+    .headerNav{
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        background-color: whitesmoke;
+        height: 50px;
+        font-size: 0.7em;
+        margin: 0px;
+        box-shadow: black 10px 0px 20px;
+    }
+    
+    .headerNav img{
+        float: left;
+        display: block;
+        height: 100%;
+        width: 25%;
+    }
+
+    .headerNav > a > img:hover, .headerNav > a > img:active{
+        opacity: 0.7;
+        transition: 300ms;
+    }
+    
+    .headerNav ul{
+        margin: 0px;
+    }
+
+    .headerNav ul li{
+        float: left;
+        list-style: none;
+        display: block;
+        margin: 10px;
+    }
+    
+    .headerNav a{
+        text-decoration: none;
+    }
+    
+    .headerNav a:active, .headerNav ul li a:hover{
+        color: #f90;
+        background-color: rgb(233, 231, 231);
+        border-radius: 3px;
+        transition: 300ms;
+    }
+    
+    .headerNav a:link, .headerNav a:visited{
+        color: rgb(0, 0, 0);
+        background-color: whitesmoke;
+        border-radius: 3px;
+        transition: 150ms;
+    }
+
+    .headerNav a:active, .headerNav ul li a:hover{
+        color: #f90;
+        background-color: rgb(233, 231, 231);
+        border-radius: 3px;
+        transition: 300ms;
+    }
+
+    .headerNav a:link, .headerNav a:visited{
+        color: rgb(0, 0, 0);
+        background-color: whitesmoke;
+        border-radius: 3px;
+        transition: 150ms;
+    }
+    
+    /*grid stuff___________________________________________________*/
+    .grid-container {
+        background: white; 
+        background-size: 100% 50%;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 2fr 1fr;
+        color:black;
+        border-radius: 3px;
+        padding: 10px;
+    }
+
+    .grid-container2{
+        width: 100%;
+        background: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    
+    .box {
+        background-color:rgb(0, 128, 0);
+        color:black;
+        border-radius: 3px;
+        padding: 5px;
+        display: inline;
+    }
+    /*Flow nav stuf________________________________________________*/
+    .flowNav{
+        visibility: hidden;
+        background: lightgray;
+        grid-column-start:4;
+        grid-column-end:5;
+        grid-row-start:5;
+        grid-row-end:6;
+        position: fixed;    
+        height: 200px;
+        color: black;
+    }
+
+    .flowNav ul{
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        height: 100%;
+    }
+
+    .flowNav li{
+        color: #fff;
+        background: darkorange;
+        display: block;
+        padding: 1rem;
+        position: relative;
+        text-decoration: none;
+        transition-duration: 0.5s;
+    }
+    
+    .flowNav ul li ul{
+        background: orange;
+        visibility: hidden;
+        opacity: 0;
+        min-width: 5rem;
+        position: absolute;
+        transition: all 0.5 ease;
+        margin-top: 1rem;
+        left: 10px;
+        display: none;
+    }
+    
+    .flowNav ul li:hover > ul, ul li ul:hover{
+        top: 0;
+        visibility: visible;
+        left: 100%;
+        opacity: 1;
+        display: block;
+    }
+    
+    .flowNav ul li ul li {
+        clear: both;
+        width: 100%;
+    }
+    .flowNav li:hover{
+        background: red;
+    }
+    /*quick bits______________________________________________________*/
+    .QuickBits {
+        background: lightgray;
+        background-size: 100% 100%;
+        grid-column-start:1;
+        grid-column-end:2;
+        grid-row-start:1;
+        grid-row-end:2;
+        position: relative;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .QuickBits p{
+        color: rgb(255, 255, 255);
+    }
+
+    /*quickSnips_______________________________________________________*/
+
+    .QuickSnips{
+        color: #f90;
+        text-align: center;
+        font-size: 40px;
+        height: 600px;
+    }
+
+    .QuickSnips p{
+        color: black;
+    }
+
+    /*picture__________________________________________________________*/
+    .picture {
+        margin-top: 80px;
+        background: lightgray;
+        padding: 0px;
+        grid-column-start:1;
+        grid-column-end:4;
+        grid-row-start:1;
+        grid-row-end:3;
+        position: relative;
+    }
+    
+    .picture > img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .pictureWords{
+        grid-column-start:2;
+        grid-column-end:3;
+        grid-row-start:1;
+        grid-row-end:4;
+        position: relative;
+        text-align: center;
+        font-size: 5em;
+    }
+
+    .pictureWords p{
+        width: auto;
+        color: #f90;
+        position: relative;
+        bottom: -100px;
+        border: #f90 solid 2px;
+    }
+    /*gallary__________________________________________________________*/
+    .gallary {
+        padding: 10px;
+        background: lightgray;
+        grid-column-start:1;
+        grid-column-end:4;
+        grid-row-start:2;
+        grid-row-end:3;
+        position: relative;
+    }
+    .gallary > img{
+        margin: 0px;
+        width: 32%;
+    }
+    /*feed_____________________________________________________________*/
+    .feed {
+        background: lightgray;
+        grid-column-start:1;
+        grid-column-end:4;
+        grid-row-start:3;
+        grid-row-end:5;
+        position: relative;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    
+    .feed p{
+        color: rgb( 0, 0, 34);
+    }
+    
+    .feed h1{
+        color: black;
+    }
+
+    /*heading stuff____________________________________________________*/
+    .gallary h3{
+        font-size: 40px;
+        color: rgb(255, 255, 255);
+    }
+    
+    /*other stuff_______________________________________________________*/
+    img{
+        border-radius: 5px;
+    }
+    
+    h3,p{
+        margin: 1px 1px 1px 1px;
+    }
+    
+    /*footer stuff_______________________________________________________*/
+    footer{
+        clear: both;
+        font-size: 5px;
+        border-radius: 10px;
+        background-color: darkgray;
+        height: auto;
+        box-sizing: border-box;
+    }
+    
+    footer ul li{
+        list-style: none;
+        display: inline;
+        padding-right: 20px;
+    }
+    
+    footer ul li a{
+        color: lightgray;
+    }
+}
+/*thicc2_________________________________________________________________________________________________________________________________*/
+@media only screen and (min-width: 768px){
+    body{
+        font-family: 'main';
+    }
+    
+    /*header nav stuff_____________________________________________*/
+    .headerNav{
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        background-color: whitesmoke;
+        height: 100px;
+        font-size: 1.5em;
+        margin: 0px;
+        box-shadow: black 10px 0px 20px;
+    }
+    
+    .headerNav img{
+        float: left;
+        display: block;
+        height: 100%;
+        width: 25%;
+    }
+
+    .headerNav > a > img:hover, .headerNav > a > img:active{
+        opacity: 0.7;
+        transition: 300ms;
+    }
+    
+    .headerNav ul{
+        margin: 0px;
+    }
+
+    .headerNav ul li{
+        float: left;
+        list-style: none;
+        display: block;
+        margin: 20px;
+    }
+    
+    .headerNav a{
+        text-decoration: none;
+    }
+    
+    .headerNav a:active, .headerNav ul li a:hover{
+        color: #f90;
+        background-color: rgb(233, 231, 231);
+        border-radius: 3px;
+        transition: 300ms;
+    }
+    
+    .headerNav a:link, .headerNav a:visited{
+        color: rgb(0, 0, 0);
+        background-color: whitesmoke;
+        border-radius: 3px;
+        transition: 150ms;
+    }
+
+    
+    
+    /*grid stuff___________________________________________________*/
+    .grid-container {
+        background: white; 
+        background-size: 100% 50%;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 100px 1fr 1fr 1fr 55px;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        color:black;
+        border-radius: 3px;
+        padding-top: 10px;
+    }
+    
+    .grid-container2{
+        width: 100%;
+        background: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .box {
+        background-color:rgb(0, 128, 0);
+        color:black;
+        border-radius: 3px;
+        padding: 5px;
+        display: inline;
+    }
+    /*Flow nav stuf________________________________________________*/
+    .flowNav{
+        visibility: visible;
+        background: lightgray;
+        grid-column-start:1;
+        grid-column-end:2;
+        grid-row-start:1;
+        grid-row-end:5;
+        position: fixed;    
+        height: 50px;
+        color: black;
+    }
+
+    .flowNav ul{
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        height: 100%;
+    }
+
+    .flowNav li{
+        color: #fff;
+        background: grey;
+        display: block;
+        padding: 1rem;
+        position: relative;
+        text-decoration: none;
+        transition-duration: 0.5s;
+    }
+    
+    .flowNav ul li ul{
+        background: rgba(0, 0, 0, 0);
+        visibility: hidden;
+        opacity: 0;
+        min-width: 5rem;
+        position: absolute;
+        transition: all 0.5 ease;
+        margin-top: 1rem;
+        left: 10px;
+        display: none;
+    }
+
+    .flowNav ul li ul li a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    .flowNav ul li:hover > ul, ul li ul:hover{
+        top: 0;
+        visibility: visible;
+        left: 100%;
+        opacity: 1;
+        display: block;
+    }
+    
+    .flowNav ul li ul li {
+        clear: both;
+        width: 30px;
+    }
+    .flowNav li:hover{
+        background: darkgrey;
+    }
+    /*quick bits______________________________________________________*/
+    .QuickBits {
+        background: lightgray;
+        background-size: 100% 100%;
+        grid-column-start:2;
+        grid-column-end:3;
+        grid-row-start:1;
+        grid-row-end:2;
+        position: relative;
+        font-size: 38px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .QuickBits p{
+        top: 20px;
+        color: rgb(255, 255, 255);
+    }
+    /*picture__________________________________________________________*/
+    .picture {
+        background: lightgray;
+        padding: 0px;
+        grid-column-start:1;
+        grid-column-end:4;
+        grid-row-start:1;
+        grid-row-end:4;
+        position: relative;
+        text-align: center;
+        border-radius: 0px;
+    }
+    .picture > img{
+        border-radius: 0px;
+    }
+
+    .pictureWords{
+        grid-column-start:1;
+        grid-column-end:4;
+        grid-row-start:1;
+        grid-row-end:4;
+        position: relative;
+        text-align: center;
+        font-size: 7em;
+    }
+
+    .pictureWords p{
+        width: auto;
+        color: #f90;
+        position: relative;
+        bottom: -350px;
+        border: #f90 solid 2px;
+    }
+
+    /*gallary__________________________________________________________*/
+    .gallary {
+        padding-left: 100px;
+        padding-right: 80px;
+        padding-bottom: 20px;
+        background: lightgray;
+        background-size: 100% 100%;
+        grid-column-start:2;
+        grid-column-end:5;
+        grid-row-start:2;
+        grid-row-end:3;
+        position: relative;
+    }
+    /*specs____________________________________________________________*/
+    .feed {
+        background: lightgray;
+        background-size: 100% 100%;
+        grid-column-start:2;
+        grid-column-end:5;
+        grid-row-start:3;
+        grid-row-end:5;
+        position: relative;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    
+    .feed p{
+        color: rgb(31, 30, 30);
+    }
+    
+    /*heading stuff____________________________________________________*/
+    .gallary h3{
+        font-size: 40px;
+        color: rgb(255, 255, 255);
+    }
+    
+    /*other stuff_______________________________________________________*/
+    img{
+        border-radius: 5px;
+    }
+    
+    h3,p{
+        margin: 1px 1px 1px 1px;
+    }
+    
+    /*footer stuff_______________________________________________________*/
+    footer{
+        clear: both;
+        font-size: 20px;
+        border-radius: 10px;
+        background-color: darkgray;
+        box-sizing: border-box;
+    }
+    
+    footer ul li{
+        list-style: none;
+        display: inline;
+        padding-right: 20px;
+    }
+    
+    footer ul li a{
+        color: lightgray;
+    }
+    
+}
+/*HeftyHeftyHefty________________________________________________________________________________________________________________________*/
+@media only screen and (min-width: 992px){
+    body{
+        font-family: 'main';
+    }
+    
+    /*header nav stuff_____________________________________________*/
+    .headerNav{
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        background-color: whitesmoke;
+        height: 100px;
+        font-size: 2.4em;
+        margin: 0px;
+        box-shadow: black 10px 0px 20px;
+    }
+    
+    .headerNav img{
+        float: left;
+        display: block;
+        height: 100%;
+        width: 25%;
+    }
+
+    .headerNav > a > img:hover, .headerNav > a > img:active{
+        opacity: 0.7;
+        transition: 300ms;
+    }
+    
+    .headerNav ul{
+        margin: 0px;
+    }
+
+    .headerNav ul li{
+        float: left;
+        list-style: none;
+        display: block;
+        margin: 20px;
+    }
+    
+    .headerNav a{
+        text-decoration: none;
+    }
+    
+    .headerNav a:active, .headerNav ul li a:hover{
+        color: #f90;
+        background-color: rgb(233, 231, 231);
+        border-radius: 3px;
+        transition: 300ms;
+    }
+    
+    .headerNav a:link, .headerNav a:visited{
+        color: rgb(0, 0, 0);
+        background-color: whitesmoke;
+        border-radius: 3px;
+        transition: 150ms;
+    }
+
+    
+    
+    /*grid stuff___________________________________________________*/
+    .grid-container {
+        background: white; 
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 120px 1fr 1fr 1fr 55px;
+        grid-template-rows: 1fr 1fr 1fr 80px;
+        color:black;
+        border-radius: 3px;
+        padding-top: 10px;
+    }
+
+    .grid-container2{
+        width: 100%;
+        background: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    
+    .box {
+        background-color:rgb(0, 128, 0);
+        color:black;
+        border-radius: 3px;
+        padding: 0px;
+        display: inline;
+    }
+    /*Flow nav stuf________________________________________________*/
+    .flowNav{
+        visibility: visible;
+        background: lightgray;
+        grid-column-start:1;
+        grid-column-end:2;
+        grid-row-start:1;
+        grid-row-end:5;
+        position: fixed;    
+        height: 50px;
+        color: black;
+    }
+
+    .flowNav ul{
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        height: 100%;
+    }
+
+    .flowNav li{
+        color: #fff;
+        font-family: 'Courier New', Courier, monospace;
+        background: grey;
+        display: block;
+        padding: 1rem;
+        position: relative;
+        text-decoration: none;
+        transition-duration: 0.5s;
+    }
+    
+    .flowNav ul li ul{
+        background: rgba(0, 0, 0, 0);
+        visibility: visible;
+        opacity: 0;
+        min-width: 5rem;
+        position: absolute;
+        transition: all 0.5 ease;
+        margin-top: 1rem;
+        left: 10px;
+        display: none;
+    }
+
+    .flowNav ul li ul li a{
+        text-decoration: none;
+        color: black;
+        font-family: 'Plaza';
+    }
+    
+    .flowNav ul li:hover > ul, ul li ul:hover{
+        top: 0;
+        visibility: visible;
+        left: 100%;
+        opacity: 1;
+        display: block;
+    }
+    
+    .flowNav ul li ul li {
+        clear: both;
+        width: 30px;
+    }
+    .flowNav li:hover{
+        background: darkgrey;
+    }
+    /*quick bits_______________________________________________________*/
+    .QuickBits {
+        background: lightgray;
+        background-size: 100% 100%;
+        grid-column-start:2;
+        grid-column-end:3;
+        grid-row-start:1;
+        grid-row-end:2;
+        position: relative;
+        font-size: 38px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .QuickBits p{
+        top: 20px;
+        color: rgb(255, 255, 255);
+    }
+
+    /*quickSnips_______________________________________________________*/
+
+    .QuickSnips{
+        color: #f90;
+        text-align: center;
+        font-size: 40px;
+        height: 600px;
+    }
+
+    .QuickSnips p{
+        color: black;
+    }
+
+    /*picture__________________________________________________________*/
+    .picture {
+        background: lightgray;
+        padding: 0px;
+        grid-column-start:1;
+        grid-column-end:4;
+        grid-row-start:1;
+        grid-row-end:4;
+        position: relative;
+        text-align: center;
+        border-radius: 0px;
+    }
+    .picture > img{
+        border-radius: 0px;
+    }
+
+    .pictureWords{
+        grid-column-start:1;
+        grid-column-end:4;
+        grid-row-start:1;
+        grid-row-end:4;
+        position: relative;
+        text-align: center;
+        font-size: 10em;
+    }
+
+    .pictureWords p{
+        width: auto;
+        color: #f90;
+        position: relative;
+        bottom: -240px;
+        border: #f90 solid 2px;
+    }
+
+    /*gallary__________________________________________________________*/
+    .gallary {
+        padding: 5px;
+        background: lightgray;
+        background-size: 100% 100%;
+        grid-column-start:2;
+        grid-column-end:5;
+        grid-row-start:2;
+        grid-row-end:3;
+        position: relative;
+    }
+    /*specs____________________________________________________________*/
+    .feed {
+        background: lightgray;
+        background-size: 100% 100%;
+        grid-column-start:2;
+        grid-column-end:5;
+        grid-row-start:3;
+        grid-row-end:5;
+        position: relative;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    
+    .feed p{
+        color: rgb(31, 30, 30);
+    }
+    
+    /*heading stuff____________________________________________________*/
+    .gallary h3{
+        font-size: 40px;
+        color: rgb(255, 255, 255);
+    }
+    
+    /*other stuff_______________________________________________________*/
+    img{
+        border-radius: 5px;
+    }
+    
+    h3,p{
+        margin: 1px 1px 1px 1px;
+    }
+    
+    /*footer stuff_______________________________________________________*/
+    footer{
+        text-align: center;
+        clear: both;
+        font-size: 20px;
+        border-radius: 10px;
+        background-color: darkgray;
+        box-sizing: border-box;
+    }
+    
+    footer ul li{
+        list-style: none;
+        display: inline;
+        padding-right: 20px;
+    }
+}

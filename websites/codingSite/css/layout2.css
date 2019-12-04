@@ -1,0 +1,435 @@
+@font-face{
+    font-family: 'Plaza';
+    src:
+        url('fonts/Plaza/Plaza\ Regular.ttf') format('truetype');  
+} 
+@font-face{
+    font-family: 'main';
+    src: 
+        url('fonts/Open-SANS/OpenSans-Bold.ttf') format('truetype');
+}
+
+html{
+    font-family: 'main';
+}
+/*____________________________________________________________________________________________________________________________________________*/
+@media only screen and (min-width: 0px){
+
+    /*header nav stuff_____________________________________________*/
+    .headerNav{
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        background-color: whitesmoke;
+        height: 50px;
+        font-size: 0.5em;
+        margin: 0px;
+        box-shadow: black 10px 0px 20px;
+    }
+    
+    .headerNav img{
+        float: left;
+        display: block;
+        height: 100%;
+        width: 25%;
+    }
+
+    .headerNav > a > img:hover, .headerNav > a > img:active{
+        opacity: 0.7;
+        transition: 300ms;
+    }
+    
+    .headerNav ul{
+        margin: 0px;
+    }
+
+    .headerNav ul li{
+        float: left;
+        list-style: none;
+        display: block;
+        margin: 10px;
+    }
+    
+    .headerNav a{
+        text-decoration: none;
+    }
+    
+    .headerNav a:active, .headerNav ul li a:hover{
+        color: #f90;
+        background-color: rgb(233, 231, 231);
+        border-radius: 3px;
+        transition: 300ms;
+    }
+    
+    .headerNav a:link, .headerNav a:visited{
+        color: rgb(0, 0, 0);
+        background-color: whitesmoke;
+        border-radius: 3px;
+        transition: 150ms;
+    }
+
+    .headerNav a:active, .headerNav ul li a:hover{
+        color: #f90;
+        background-color: rgb(233, 231, 231);
+        border-radius: 3px;
+        transition: 300ms;
+    }
+
+    .headerNav a:link, .headerNav a:visited{
+        color: rgb(0, 0, 0);
+        background-color: whitesmoke;
+        border-radius: 3px;
+        transition: 150ms;
+    }
+
+    /*sub menu stuff_______________________________________________*/
+
+    li{
+        display: block;
+        float: left;
+        padding: 1rem;
+        position: relative;
+        text-decoration: none;
+        transition-duration: 0.5s;
+    }
+
+    ul li ul{
+        background: whitesmoke;
+        visibility: hidden;
+        opacity: 0;
+        min-width: 5rem;
+        position: absolute;
+        transition: all 0.5 ease;
+        margin-top: 1rem;
+        left: 0;
+        display: none;
+    }
+
+    ul li:hover > ul, ul li ul:hover{
+        visibility: visible;
+        opacity: 1;
+        display: block;
+    }
+
+    ul li ul li {
+        clear: both;
+        width: 100%;
+    }
+
+    /*footer stuff_______________________________________________________*/
+    footer{
+        clear: both;
+        font-size: 5px;
+        border-radius: 10px;
+        background-color: darkgray;
+        height: auto;
+        box-sizing: border-box;
+    }
+    
+    footer ul li{
+        list-style: none;
+        display: inline;
+        padding-right: 20px;
+    }
+    
+}
+/*________________________________________________________________________________________________________________________________________*/
+@media only screen and (min-width: 768px){
+    
+    /*header nav stuff_____________________________________________*/
+    .headerNav{
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        background-color: whitesmoke;
+        height: 100px;
+        font-size: 2.4em;
+        margin: 0px;
+        box-shadow: black 10px 0px 20px;
+    }
+    
+    .headerNav img{
+        float: left;
+        display: block;
+        height: 100%;
+        width: 25%;
+    }
+
+    .headerNav > a > img:hover, .headerNav > a > img:active{
+        opacity: 0.7;
+        transition: 300ms;
+    }
+    
+    .headerNav ul{
+        margin: 0px;
+    }
+
+    .headerNav ul li{
+        float: left;
+        list-style: none;
+        display: block;
+        margin: 20px;
+    }
+    
+    .headerNav a{
+        text-decoration: none;
+    }
+    
+    .headerNav a:active, .headerNav ul li a:hover{
+        color: #f90;
+        background-color: rgb(233, 231, 231);
+        border-radius: 3px;
+        transition: 300ms;
+    }
+    
+    .headerNav a:link, .headerNav a:visited{
+        color: rgb(0, 0, 0);
+        background-color: whitesmoke;
+        border-radius: 3px;
+        transition: 150ms;
+    }
+
+    /*sub menu stuff_______________________________________________*/
+    ul{
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+    }
+
+    li{
+        display: block;
+        float: left;
+        padding: 1rem;
+        position: relative;
+        text-decoration: none;
+        transition-duration: 0.5s;
+    }
+
+    ul li ul{
+        background: whitesmoke;
+        visibility: hidden;
+        opacity: 0;
+        min-width: 5rem;
+        position: absolute;
+        transition: all 0.5 ease;
+        margin-top: 1rem;
+        left: 0;
+        display: none;
+    }
+
+    ul li:hover > ul, ul li ul:hover{
+        visibility: visible;
+        opacity: 1;
+        display: block;
+    }
+
+    ul li ul li {
+        clear: both;
+        width: 100%;
+    }
+    
+    /*items_________________________________________________________*/
+    h1{
+        
+        color: #f90;
+        text-align: center;
+        font-size: 70px;
+        margin: 30%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: solid 2px black;
+    }
+
+    .items{
+        margin: 10%;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        text-align: center;
+        border: #f90 2px solid;
+    }
+
+    .items h2{
+        color: #f90;
+        font-size: 50px;
+        margin: 0px;
+    }
+
+    /*footer stuff_______________________________________________________*/
+    footer{
+        clear: both;
+        font-size: 20px;
+        border-radius: 10px;
+        background-color: darkgray;
+        box-sizing: border-box;
+    }
+    
+    footer ul li{
+        list-style: none;
+        display: inline;
+        padding-right: 20px;
+    }
+    
+    footer ul li a{
+        color: lightgray;
+    }
+}
+/*________________________________________________________________________________________________________________________________________*/
+@media only screen and (min-width: 992px){
+
+    body{
+        margin: 0px;
+        font-family: 'main';
+    }
+
+    /*header nav stuff_____________________________________________*/
+    .headerNav{
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        background-color: whitesmoke;
+        height: 100px;
+        font-size: 2.4em;
+        margin: 0px;
+        box-shadow: black 10px 0px 20px;
+    }
+    
+    .headerNav img{
+        float: left;
+        display: block;
+        height: 100%;
+        width: 25%;
+    }
+
+    .headerNav > a > img:hover, .headerNav > a > img:active{
+        opacity: 0.7;
+        transition: 300ms;
+    }
+    
+    .headerNav ul{
+        margin: 0px;
+    }
+
+    .headerNav ul li{
+        float: left;
+        list-style: none;
+        display: block;
+        margin: 20px;
+    }
+    
+    .headerNav a{
+        text-decoration: none;
+    }
+    
+    .headerNav a:active, .headerNav ul li a:hover{
+        color: #f90;
+        background-color: rgb(233, 231, 231);
+        border-radius: 3px;
+        transition: 300ms;
+    }
+    
+    .headerNav a:link, .headerNav a:visited{
+        color: rgb(0, 0, 0);
+        background-color: whitesmoke;
+        border-radius: 3px;
+        transition: 150ms;
+    }
+
+    .headerNav a:active, .headerNav ul li a:hover{
+        color: #f90;
+        background-color: rgb(233, 231, 231);
+        border-radius: 3px;
+        transition: 300ms;
+    }
+
+    .headerNav a:link, .headerNav a:visited{
+        color: rgb(0, 0, 0);
+        background-color: whitesmoke;
+        border-radius: 3px;
+        transition: 150ms;
+    }
+
+    /*sub menu stuff_______________________________________________*/
+    ul{
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+    }
+
+    li{
+        display: block;
+        float: left;
+        padding: 1rem;
+        position: relative;
+        text-decoration: none;
+        transition-duration: 0.5s;
+    }
+
+    ul li ul{
+        background: whitesmoke;
+        visibility: hidden;
+        opacity: 0;
+        min-width: 5rem;
+        position: absolute;
+        transition: all 0.5 ease;
+        margin-top: 1rem;
+        left: 0;
+        display: none;
+    }
+
+    ul li:hover > ul, ul li ul:hover{
+        visibility: visible;
+        opacity: 1;
+        display: block;
+    }
+
+    ul li ul li {
+        clear: both;
+        width: 100%;
+    }
+
+    /*items*/
+    h1{
+        
+        color: #f90;
+        text-align: center;
+        font-size: 70px;
+        margin: 30%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: solid 2px black;
+    }
+
+    .items{
+        margin: 10%;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        text-align: center;
+        border: #f90 2px solid;
+    }
+
+    .items h2{
+        color: #f90;
+        font-size: 50px;
+        margin: 0px;
+    }
+
+    /*footer stuff_______________________________________________________*/
+    footer{
+        text-align: center;
+        clear: both;
+        font-size: 20px;
+        border-radius: 10px;
+        background-color: darkgray;
+        box-sizing: border-box;
+    }
+    
+    footer ul li{
+        list-style: none;
+        display: inline;
+        padding-right: 20px;
+    }
+
+    .space{
+        height: 200px;
+    }
+}

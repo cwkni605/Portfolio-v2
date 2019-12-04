@@ -1,0 +1,207 @@
+html{
+    width: 100%;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+}
+
+body{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 600px;
+    max-width: 2000px;
+}
+
+@font-face{
+    font-family: 'Plaza';
+    src:
+        url('fonts/Plaza/Plaza\ Regular.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'TitilliamWeb';
+    src:
+        url('fonts/TitilliumWeb/TitilliumWeb-Regular.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Righteous';
+    src:
+        url('fonts/Righteous/Righteous-Regular.ttf') format('truetype');
+}
+
+/*header stuff*/
+header{
+    background-color: rgba(134, 134, 134, 0.432);
+    height: 150px;
+    font-size: 70px;
+    border-radius: 5px;
+}
+
+header img{
+    float: left;
+    height: 100%;
+    border-radius: 5px;
+}
+
+header ul li{
+    float: left;
+    list-style: none;
+    display: block;
+    margin: 20px;
+}
+
+header ul li a{
+    text-decoration: none;
+    font-family: 'TitilliamWeb';
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+header a:active, header ul li a:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgba(177, 177, 177, 0.74);
+    border-radius: 5px;
+}
+
+header a:link, header a:visited{
+    color: rgb(255, 255, 255);
+}
+
+
+/*grid layout and stuff*/
+.grid-container { 
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 1fr;
+    color:black;
+    width: 100%;
+}
+
+.intro{
+    grid-column-start:1;
+    grid-column-end:5;
+    grid-row-start:1;
+    grid-row-end:2;
+    position: relative;
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.intro h1, .intro p{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.sightseeing{
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start:2;
+    grid-row-end:3;
+}
+
+.sightseeing h1{
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Plaza';
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+.sightseeing img{
+    width: 100%;
+}
+
+.sightseeing p{
+    font-weight: bolder;
+    color: rgb(219, 219, 219);
+    background-color: rgba(134, 134, 134, 0.432);
+    font-family: 'Righteous';
+    font-weight: lighter;
+}
+
+.culture{
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start:2;
+    grid-row-end:3;
+}
+
+.culture h1{
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Plaza';
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+.culture img{
+    width: 100%;
+}
+
+.culture p{
+    font-weight: bolder;
+    color: rgb(219, 219, 219);
+    background-color: rgba(134, 134, 134, 0.432);
+    font-size: 115%;
+    font-family: 'Righteous';
+    font-weight: lighter;
+}
+
+.festivals{
+    grid-column-start:3;
+    grid-column-end:4;
+    grid-row-start:2;
+    grid-row-end:3;
+}
+
+.festivals h1{
+    text-align: center;
+    font-size: 55px;
+    font-family: 'Plaza';
+    padding-bottom: 18px;
+    margin: 0px;
+}
+
+.festivals img{
+    width: 100%;
+}
+
+.festivals p{
+    font-weight: bolder;
+    color: rgb(219, 219, 219);
+    background-color: rgba(134, 134, 134, 0.432);
+    font-size: 115%;
+    font-family: 'Righteous';
+    font-weight: lighter;
+}
+
+.sports{
+    grid-column-start:4;
+    grid-column-end:5;
+    grid-row-start:2;
+    grid-row-end:3;
+}
+
+.sports h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Plaza';
+    padding-bottom: 23px;
+    margin: 0px;
+}
+
+.sports img{
+    width: 100%;
+}
+
+.sports p{
+    font-weight: bolder;
+    color: rgb(219, 219, 219);
+    background-color: rgba(134, 134, 134, 0.432);
+    font-size: 100%;
+    font-family: 'Righteous';
+    font-weight: lighter;
+}

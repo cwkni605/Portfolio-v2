@@ -1,0 +1,138 @@
+html{
+    width: 100%;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+}
+
+body{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 600px;
+    max-width: 2000px;
+}
+
+@font-face{
+    font-family: 'Plaza';
+    src:
+        url('fonts/Plaza/Plaza\ Regular.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'TitilliamWeb';
+    src:
+        url('fonts/TitilliumWeb/TitilliumWeb-Regular.ttf') format('truetype');
+}
+
+/*grid stuff*/
+.grid-container { 
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr;
+    color:black;
+    width: 100%;
+}
+
+.box {
+    color:black;
+    border-radius: 5px;
+    padding: 5px;
+    display: inline;
+}
+
+.title {
+    grid-column-start:1;
+    grid-column-end:4;
+    grid-row-start:1;
+    grid-row-end:2;
+    position: relative;
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Plaza';
+}
+
+.body {
+    grid-column-start:1;
+    grid-column-end:4;
+    grid-row-start:2;
+    grid-row-end:3;
+    position: relative;
+}
+
+.body img{
+    width: 33%;
+    height: 20em;
+}
+
+.body img:hover, .body img:active{
+    transform: scale(30%);
+    transition: 500ms;
+}
+
+/*header nav stuff*/
+header{
+    background-color: rgba(134, 134, 134, 0.432);
+    height: 150px;
+    font-size: 70px;
+    border-radius: 5px;
+}
+
+header img{
+    float: left;
+    height: 100%;
+}
+
+header ul li{
+    float: left;
+    list-style: none;
+    display: block;
+    margin: 20px;
+}
+
+header ul li a{
+    text-decoration: none;
+    font-family: 'TitilliamWeb';
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+header a:active, header ul li a:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgba(177, 177, 177, 0.74);
+    border-radius: 5px;
+}
+
+header a:link, header a:visited{
+    color: rgb(255, 255, 255);
+}
+
+/*other stuff*/
+img{
+    border-radius: 5px;
+}
+
+h3,p{
+    margin: 1px 1px 1px 1px;
+}
+
+/*footer stuff*/
+footer{
+    clear: both;
+    font-size: 70px;
+    border-radius: 10px;
+    background-color: rgb(0, 34, 27);
+    height: 100px;
+    box-sizing: border-box;
+}
+
+footer ul li{
+    float: left;
+    list-style: none;
+    display: inline;
+    padding-right: 20px;
+}
+
+footer ul li a{
+    color: gold;
+}

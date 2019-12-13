@@ -27,7 +27,7 @@
 
 @media only screen and (min-width: 768px){
 
-    /*this is the desktop header*/
+    /*this is the header*/
 
     header{
         font-family: 'righteous';
@@ -62,7 +62,7 @@
         background: linear-gradient(red , orange , green 10% , orange , red);
     }
 
-    /*this is the desktop footer*/
+    /*this is the footer*/
 
     footer{
         clear: both;

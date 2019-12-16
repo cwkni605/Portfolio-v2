@@ -59,8 +59,7 @@
 
     .MiiImg img{
         margin: auto;
-        height: 100%;
-        width: min-content;
+        width: 100%;
     }
 }
 
@@ -100,10 +99,6 @@
         grid-row-end: 3;
     }
 
-    .MiiImg img{
-        margin: auto;
-        width: 50%;
-    }
 }
 
 @media only screen and (min-width: 992px){
@@ -117,7 +112,7 @@
         width: 90%;
         background: linear-gradient(rgba(83, 83, 83, 0.35),rgba(83, 83, 83, 0.35));
         border-radius: 5px;
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .header{
@@ -133,11 +128,11 @@
         grid-column-end: 2;
         grid-row-start: 2;
         grid-row-end: 3;
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .bio > p{
-        font-size: 50px;
+        font-size: 30px;
     }
 
     .MiiImg {
@@ -150,7 +145,7 @@
 
     .MiiImg img{
         margin: auto;
-        width: 50%;
+        width: 100%;
     }
 
 }

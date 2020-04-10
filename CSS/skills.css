@@ -41,10 +41,14 @@
         border-right: solid black 1px;
     }
 
+    #filled:not(.end){
+        border-bottom: solid black 2px;
+        border-top: solid black 2px;
+    }
+
     img{
         width: 40px;
     }
-
 }
 
 @media only screen and (min-width: 768px){
@@ -75,16 +79,31 @@
         width:80%;
     }
 
-    .body > table{
+    table{
         border: solid black 3px;
+        border-collapse: collapse;
     }
 
     .body th{
         border-right: solid black 3px;
+        width: 30%;
     }
 
     img{
         width: 150px;
+    }
+
+    #filled {
+        animation-name: colorful;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        
+    }
+    
+    .end
+    {
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
     }
 
 }

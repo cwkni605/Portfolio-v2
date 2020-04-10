@@ -55,8 +55,10 @@
     body{
         margin: 0px;
         font-family: 'plaza';
-        background: linear-gradient(red , orange , green 10% , orange , red);
-    }
+        animation-name: colorful;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        }
 
     /*this is the footer*/
 
@@ -107,7 +109,6 @@
     body{
         margin: 0px;
         font-family: 'plaza';
-        background: linear-gradient(red , orange , green 10% , orange , red);
     }
 
     /*this is the footer*/
@@ -159,7 +160,6 @@
     body{
         margin: 0px;
         font-family: 'plaza';
-        background: linear-gradient(red , orange , green 10% , orange , red);
     }
 
     /*this is the desktop footer*/
@@ -172,5 +172,28 @@
         margin-right: auto;
         background: rgb(255, 165, 0, 0.5);
         color: rgb(68, 68, 68);
+        width: fit-content;
+    }
+}
+@keyframes colorful {
+    0%
+    {
+        background: red;
+    }
+    25%
+    {
+        background: yellow;
+    }
+    50%
+    {
+        background: green;
+    }
+    75%
+    {
+        background: blue;
+    }
+    100%
+    {
+        background: red;
     }
 }

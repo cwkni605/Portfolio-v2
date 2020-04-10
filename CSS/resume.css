@@ -32,7 +32,7 @@
 
     .body > iframe{
         width: 100%;
-        height: 350px;
+        height: max-content;
     }
 
 }
@@ -47,14 +47,54 @@
 
 @media only screen and (min-width: 992px){
 
-    .body{
-        width: 60%;
+    .body
+    {
+        width: 65%;
     }
 
-    .body > iframe{
+    .body > iframe
+    {
         width: 100%;
         height: 700px;
     }
 
+    .body > ul
+    {
+        text-align: left;
+        padding: 30px;
+        background: rgba(125, 125, 125, 0.3);
+        border-radius: 5px;
+    }
+
+    h1
+    {
+        font-size: 3.25em;
+    }
+
+    h2
+    {
+        font-size: 2.5em;
+        background: rgba(125, 125, 125, 0.3);
+        border-radius: 5px;
+    }
+
+    .body > h3
+    {
+        font-size: 25px;
+        background: rgba(125, 125, 125, 0.3);
+        border-radius: 5px;
+    }
+
+    body > h3
+    {
+        background: rgba(125, 125, 125, 0.3);
+        border-radius: 5px;
+    }
+
+    .body a
+    {
+        background-color: rgb(255, 255, 255);
+        border-radius: 2px;
+    }
 
 }

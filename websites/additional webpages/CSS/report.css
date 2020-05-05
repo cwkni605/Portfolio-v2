@@ -1,0 +1,32 @@
+@media only screen and (min-width: 600px){
+    iframe{
+        width: 98%;
+        height: 100vh;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    iframe{
+        width: 80%;
+        margin-left: 9%;
+        margin-right: 9%;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    iframe{
+        width: 70%;
+        margin-left: 14%;
+        margin-right: 14%;
+    }
+}
+
+@media only screen and (min-width: 1300px){
+    iframe{
+        width: 50%;
+        margin-left: 24%;
+        margin-right: 24%;
+    }
+}

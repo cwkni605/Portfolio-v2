@@ -86,13 +86,37 @@
 
     .body th{
         border-right: solid black 3px;
-        width: 30%;
+        width: 100%;
+        height: 170px;
+        transition: 2s;
+        padding: 0px;
+    }
+
+    td{
+        width: 0%;
+        transition: 2s;
+        padding: 0px;
+    }
+
+    .body table:hover td{
+        width:14%;
+        transition: 2s;
+    }
+
+    .body table:hover th{
+        width:35%;
+        transition: 2s;
     }
 
     img{
-        width: 150px;
+        width: 0px;
+        transition: 2s;
     }
 
+    .body table:hover img{
+        width: 150px;
+        transition: 2s;
+    }
     #filled {
         animation-name: colorful;
         animation-duration: 7s;

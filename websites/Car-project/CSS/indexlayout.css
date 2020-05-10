@@ -1,0 +1,179 @@
+@font-face{
+    font-family:'stone';
+    src: url('Fonts/LikeAStone.ttf');
+    src: url('Fonts/LikeAStone.ttf') format(truetype);
+}
+@font-face{
+    font-family:'cosmos';
+    src: url('Fonts/Cosmos.otf');
+    src: url('Fonts/Cosmos.otf') format(opentype);
+}
+@font-face{
+    font-family:'nervous';
+    src: url('Fonts/NERVOUSM.ttf');
+    src: url('Fonts/NERVOUSM.ttf') format(truetype);
+}
+@media only screen and (min-width: 600px){
+    body{
+        background-image: url("../images/back.jpg");
+        
+    }
+    
+    .bod{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 5% 30% 40% 15%;
+        
+    }
+    
+    .image{
+        grid-column-start: 1;
+        grid-column-end:3;
+        grid-row-start:2;
+        grid-row-end: 3;
+        background-image: url("../images/Timage.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+        
+    }
+    .image  h1{
+        text-align: center;
+        z-index: 2;
+        padding: 3em;
+        font-family: 'cosmos';
+        color:green;
+        text-shadow: 2px 2px black;
+        font-size:25px;
+    }
+    .text{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start:3;
+        grid-row-end:4;
+        display: inline;
+        
+    }
+    .text p{
+      font-family: 'nervous';
+      font-size: 17px;
+      background-color:rgba(168, 166, 166, 0.368);
+      
+    }
+    .text img{
+        width:50%;
+        float: left;
+        margin-right: 5px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    body{
+        background-image: url("../images/back.jpg");
+        
+    }
+    
+    .bod{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 5% 30% 40% 15%;
+        
+    }
+    
+    .image{
+        grid-column-start: 1;
+        grid-column-end:3;
+        grid-row-start:2;
+        grid-row-end: 3;
+        background-image: url("../images/Timage.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+        
+    }
+    .image  h1{
+        text-align: center;
+        z-index: 2;
+        padding: 3em;
+        font-family: 'cosmos';
+        color:green;
+        text-shadow: 2px 2px black;
+        font-size:50px;
+    }
+    .text{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start:3;
+        grid-row-end:4;
+        display: inline;
+        
+    }
+    .text p{
+      font-family: 'nervous';
+      font-size: 25px;
+      background-color:rgba(168, 166, 166, 0.368);
+      
+    }
+    .text img{
+        width:50%;
+        float: left;
+        margin-right: 5px;
+    }
+    
+}
+
+@media only screen and (min-width: 992px){
+
+body{
+    background-image: url("../images/back.jpg");
+    
+}
+
+.bod{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 5% 30% 40% 15%;
+    
+}
+
+.image{
+    grid-column-start: 1;
+    grid-column-end:3;
+    grid-row-start:2;
+    grid-row-end: 3;
+    background-image: url("../images/Timage.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    
+}
+.image  h1{
+    text-align: center;
+    z-index: 2;
+    padding: 3em;
+    font-family: 'cosmos';
+    color:green;
+    text-shadow: 2px 2px black;
+    font-size:80px;
+}
+.text{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:3;
+    grid-row-end:4;
+    display: inline;
+    
+}
+.text p{
+  font-family: 'nervous';
+  font-size: 25px;
+  background-color:rgba(168, 166, 166, 0.368);
+  
+}
+.text img{
+    width:50%;
+    float: left;
+    margin-right: 5px;
+}
+
+}

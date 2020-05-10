@@ -1,0 +1,130 @@
+@font-face{
+    font-family:'cosmos';
+    src: url('Fonts/Cosmos.otf');
+    src: url('Fonts/Cosmos.otf') format(opentype);
+}
+@font-face{
+    font-family:'nervous';
+    src: url('Fonts/NERVOUSM.ttf');
+    src: url('Fonts/NERVOUSM.ttf') format(truetype);
+}
+
+@media only screen and (min-width: 600px){
+    .fish{
+        font-family: 'nervous';
+        font-size: 30px;
+        background-color:rgba(105, 105, 105, 0.411);
+    }
+    img{
+        width: 49%;
+    }
+    body{
+        background-image:url("../images/tree.png");
+        background-size: 100%;
+        
+    }
+    .app{
+        background-color: darkgreen;
+        font-family:'cosmos';
+        margin: auto;
+        width: 20%;
+        font-size: 70px;
+        text-align: center;
+        position: relative;
+        border-radius: 10px;
+    }
+    .app a{
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        
+    }
+    .app a:hover{
+        color: grey;
+        
+    }
+    .app:hover{
+        transform:scale(1.5);
+        transition: 1s;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .fish{
+        font-family: 'nervous';
+        font-size: 30px;
+        background-color:rgba(105, 105, 105, 0.411);
+    }
+    img{
+        width: 49%;
+    }
+    body{
+        background-image:url("../images/tree.png");
+        background-size: 100%;
+        
+    }
+    .app{
+        background-color: darkgreen;
+        font-family:'cosmos';
+        margin: auto;
+        width: 20%;
+        font-size: 70px;
+        text-align: center;
+        position: relative;
+        border-radius: 10px;
+    }
+    .app a{
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        
+    }
+    .app a:hover{
+        color: grey;
+        
+    }
+    .app:hover{
+        transform:scale(1.5);
+        transition: 1s;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .fish{
+        font-family: 'nervous';
+        font-size: 30px;
+        background-color:rgba(105, 105, 105, 0.411);
+    }
+    img{
+        width: 49%;
+    }
+    body{
+        background-image:url("../images/tree.png");
+        background-size: 100%;
+        
+    }
+    .app{
+        background-color: darkgreen;
+        font-family:'cosmos';
+        margin: auto;
+        width: 20%;
+        font-size: 70px;
+        text-align: center;
+        position: relative;
+        border-radius: 10px;
+    }
+    .app a{
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        
+    }
+    .app a:hover{
+        color: grey;
+        
+    }
+    .app:hover{
+        transform:scale(1.5);
+        transition: 1s;
+    }
+}

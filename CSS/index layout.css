@@ -1,3 +1,9 @@
+/*Author: Connor Knight*/
+
+/*This is the css for the index page*/
+
+/*All possible fonts that can be used are defined here*/
+
 @font-face{
     font-family: 'plaza';
     src:
@@ -21,49 +27,10 @@
         url('fonts/TitilliumWeb/TitilliumWeb-Regular.ttf') format('truetype');
 }
 
+/*the base setup for all screens bigger than 600px and the specialization for the slightly bigger screen.*/
 @media only screen and (min-width: 600px){
-    .body{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: fit-content 1fr;
-        margin: auto;
-        padding: 10px;
-        width: 90%;
-        background: linear-gradient(rgba(83, 83, 83, 0.836));
-        border-radius: 5px;
-        font-size: 20px;
-    }
 
-    .header{
-        text-align: center;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
-
-    .bio{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
-
-    .MiiImg {
-        /*center img*/
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
-
-    .MiiImg img{
-        margin: auto;
-        width: 100%;
-    }
-}
-
-@media only screen and (min-width: 768px){
+    /*sets up the grid layout and background for the content section of the site*/
     .body{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -76,6 +43,7 @@
         font-size: 20px;
     }
 
+    /*tells the header text in the content section to center and be at the top*/
     .header{
         text-align: center;
         grid-column-start: 1;
@@ -84,6 +52,7 @@
         grid-row-end: 2;
     }
 
+    /*tells the bio text in the content section to be at the left side of the section*/
     .bio{
         grid-column-start: 1;
         grid-column-end: 2;
@@ -91,30 +60,41 @@
         grid-row-end: 3;
     }
 
+    /*tells the image in the content section to be at the right side of the section*/
     .MiiImg {
-        /*center img*/
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 2;
         grid-row-end: 3;
     }
 
+    /*centers the image in its assiangined area and makes it fill the width of its alotted area*/
+    .MiiImg img{
+        margin: auto;
+        width: 100%;
+    }
 }
 
+/*the overides for all screens bigger than 768px*/
+@media only screen and (min-width: 768px){
+    /*it changes the font to fit the bigger screen*/
+    .body{
+        font-size: 25px;
+    }
+}
+
+/*the base setup for all screens bigger than 992px and the specialization for the smaller screen.*/
 @media only screen and (min-width: 992px){
 
+    /*sets up a new grid to organize the site differently*/
     .body{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: fit-content 2fr 1fr;
-        margin: auto;
-        padding: 10px;
-        width: 90%;
-        background: linear-gradient(rgba(83, 83, 83, 0.35),rgba(83, 83, 83, 0.35));
-        border-radius: 5px;
         font-size: 30px;
     }
 
+    /*tells the header text in the content section to be in the top space and centered*/
     .header{
         text-align: center;
         grid-column-start: 1;
@@ -123,36 +103,50 @@
         grid-row-end: 2;
     }
 
+    /*the general rules for the bio text and the spaces that they are allotted to*/
     .bio{
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 3;
         grid-row-end: 4;
-        font-size: 60px;
+        font-size: 40px;
     }
 
+    /*the specific rules for the content text within the bio*/
     .bio > p{
-        font-size: 60px;
         width: 90%;
         margin-left: 5%;
-        text-align: center;
+        text-align: left;
     }
 
+    /*the specific rules for the header text within the bio*/
     .bio h2{
         text-align: center;
     }
 
+    /*tells the image where it is allowed to be*/
     .MiiImg {
-        /*center img*/
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 2;
         grid-row-end: 3;
     }
 
+    /*the the image what size it should be and how to center itself*/
     .MiiImg img{
-        margin-left: 37.5%;
-        width: 25%;
+        margin-left: 35%;
+        width: 30%;
     }
 
+}
+
+/*this tis the media tag for screens of my size (BIGG) or 1400px*/
+@media only screen and (min-width: 1400px){
+
+    /*tells the bio content text to have less width*/
+    .bio > p{
+        width: 68%;
+        margin-left: 16%;
+        text-align: left;
+    }
 }

@@ -1,0 +1,388 @@
+@font-face{
+    font-family:'cosmos';
+    src: url('Fonts/Cosmos.otf');
+    src: url('Fonts/Cosmos.otf') format(opentype);
+}
+@font-face{
+    font-family:'nervous';
+    src: url('Fonts/NERVOUSM.ttf');
+    src: url('Fonts/NERVOUSM.ttf') format(truetype);
+}
+
+@media only screen and (min-width: 600px){
+
+    html{
+        background-image: url(../images/grassyField.jpg);
+        background-size: cover;
+    }
+
+    .body{
+        width: 85%;
+        margin: auto;
+        padding: 2%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: fit-content 1fr 2fr;
+        font-family: 'nervous';
+    }
+
+    .stats{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        font-size: 30px;
+    }
+
+    .stats table{
+        width: 100%;
+        height: 80%;
+        border-collapse: collapse;
+        border: black 1px solid;
+        background: rgba(102, 102, 102, 0.836);
+    }
+
+    .stats td , .stats th{
+        border: black 2px solid;
+    }
+
+    .stats h1{
+        margin: auto;
+        height: 20%;
+        font-size: 80px;
+        text-align: center;
+        background: rgba(102, 102, 102, 0.836);
+        border: black 2px solid;
+        border-bottom: black 0px solid;
+    }
+
+    .img1{
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+        opacity: 80%;
+        border-radius: 2px;
+        border: solid black 2px;
+    }
+
+    .history {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background: rgba(102, 102, 102, 0.836);
+        font-size: 15px;
+    }
+
+    .history h1{
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .history p{
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: auto;
+        letter-spacing: 1px;
+        word-spacing: 4px;
+    }
+
+    .weapons {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        background: rgba(102, 102, 102, 0.836);
+        font-size: 10px;
+        border-right: black solid 2px;
+    }
+
+    .weapons h1{
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .weapons h2{
+        padding: 10px;
+    }
+
+    .weapons p{
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: auto;
+        letter-spacing: 1px;
+        word-spacing: 4px;
+        line-height: 30px;
+    }
+
+    .armor{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background: rgba(102, 102, 102, 0.836);
+        font-size: 15px;
+        letter-spacing: 1px;
+        word-spacing: 4px;
+        line-height: 30px;
+        padding: 5px;
+    }
+
+    .armor h1{
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+}
+
+@media only screen and (min-width: 768px){
+
+    html{
+        background-image: url(../images/grassyField.jpg);
+        background-size: cover;
+    }
+
+    .body{
+        width: 85%;
+        margin: auto;
+        padding: 2%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: fit-content 1fr 2fr;
+        font-family: 'nervous';
+    }
+
+    .stats{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        font-size: 40px;
+    }
+
+    .stats table{
+        width: 100%;
+        height: 80%;
+        border-collapse: collapse;
+        border: black 1px solid;
+        background: rgba(102, 102, 102, 0.836);
+    }
+
+    .stats td , .stats th{
+        border: black 2px solid;
+    }
+
+    .stats h1{
+        margin: auto;
+        height: 20%;
+        font-size: 80px;
+        text-align: center;
+        background: rgba(102, 102, 102, 0.836);
+        border: black 2px solid;
+        border-bottom: black 0px solid;
+    }
+
+    .img1{
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+        opacity: 80%;
+        border-radius: 2px;
+        border: solid black 2px;
+    }
+
+    .history {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background: rgba(102, 102, 102, 0.836);
+        font-size: 20px;
+    }
+
+    .history h1{
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .history p{
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: auto;
+        letter-spacing: 1px;
+        word-spacing: 4px;
+    }
+
+    .weapons {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        background: rgba(102, 102, 102, 0.836);
+        font-size: 15px;
+        border-right: black solid 2px;
+    }
+
+    .weapons h1{
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .weapons h2{
+        padding: 10px;
+    }
+
+    .weapons p{
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: auto;
+        letter-spacing: 1px;
+        word-spacing: 4px;
+        line-height: 30px;
+    }
+
+    .armor{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background: rgba(102, 102, 102, 0.836);
+        font-size: 20px;
+        letter-spacing: 1px;
+        word-spacing: 4px;
+        line-height: 30px;
+        padding: 5px;
+    }
+
+    .armor h1{
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+}
+
+@media only screen and (min-width: 992px){
+
+    html{
+        background-image: url(../images/grassyField.jpg);
+        background-size: cover;
+    }
+
+    .body{
+        width: 85%;
+        margin: auto;
+        padding: 2%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: fit-content 1fr 2fr;
+        font-family: 'nervous';
+    }
+
+    .stats{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        font-size: 45px;
+    }
+
+    .stats table{
+        width: 100%;
+        height: 80%;
+        border-collapse: collapse;
+        border: black 1px solid;
+        background: rgba(102, 102, 102, 0.836);
+    }
+
+    .stats td , .stats th{
+        border: black 2px solid;
+    }
+
+    .stats h1{
+        margin: auto;
+        height: 20%;
+        font-size: 80px;
+        text-align: center;
+        background: rgba(102, 102, 102, 0.836);
+        border: black 2px solid;
+        border-bottom: black 0px solid;
+    }
+
+    .img1{
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+        opacity: 80%;
+        border-radius: 2px;
+        border: solid black 2px;
+    }
+
+    .history {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background: rgba(102, 102, 102, 0.836);
+        font-size: 25px;
+    }
+
+    .history h1{
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .history p{
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: auto;
+        letter-spacing: 1px;
+        word-spacing: 4px;
+    }
+
+    .weapons {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        background: rgba(102, 102, 102, 0.836);
+        font-size: 20px;
+        border-right: black solid 2px;
+    }
+
+    .weapons h1{
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .weapons h2{
+        padding: 10px;
+    }
+
+    .weapons p{
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: auto;
+        letter-spacing: 1px;
+        word-spacing: 4px;
+        line-height: 30px;
+    }
+
+    .armor{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background: rgba(102, 102, 102, 0.836);
+        font-size: 25px;
+        letter-spacing: 1px;
+        word-spacing: 4px;
+        line-height: 30px;
+        padding: 5px;
+    }
+
+    .armor h1{
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+}

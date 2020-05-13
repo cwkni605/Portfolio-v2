@@ -143,7 +143,7 @@
 /*this tis the media tag for screens of my size (BIGG) or 1400px*/
 @media only screen and (min-width: 1400px){
 
-    /*tells the bio content text to have less width*/
+    /*tells the bio content text to have less width and to align acordingly*/
     .bio > p{
         width: 68%;
         margin-left: 16%;

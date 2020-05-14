@@ -31,10 +31,11 @@
     }
 
     .body > table{
-        border: solid black 1px;
+        border: solid black 2px;
         border-radius: 5px;
         width: 100%;
-        background: rgba(20, 97, 20, 0.5);;
+        background: var(--main-color);
+        border-collapse: collapse;
     }
 
     .body th{
@@ -99,7 +100,7 @@
     }
 
     .body table:hover td{
-        width:14%;
+        width: 14%;
         transition: 2s;
     }
 
@@ -117,6 +118,7 @@
         width: 150px;
         transition: 2s;
     }
+
     #filled {
         animation-name: colorful;
         animation-duration: 7s;

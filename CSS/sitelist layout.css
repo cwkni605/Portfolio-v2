@@ -30,7 +30,6 @@
 
     .body a:hover{
         color: rgb(255, 255, 255);
-        font-size: 30px;
         transition: 1s;
         background-color: black;
     }
@@ -62,6 +61,11 @@
         animation-fill-mode: forwards;
     }
 
+    .body > div > a > p#twoLiner{
+        margin-top: 9px;
+        margin-bottom: 9px;
+    }
+
     .body > div img{
         width: 100%;
         border-radius: 5px;
@@ -85,10 +89,6 @@
 
 @media only screen and (min-width: 768px){
 
-    .body a:hover{
-        font-size: 40px;
-    }
-
     .body h1{
         font-size: 40px;
     }
@@ -106,13 +106,13 @@
         animation-duration: 750ms;
         animation-fill-mode: forwards;
     }
+    .body > div > a > p#twoLiner{
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
 }
 
 @media only screen and (min-width: 992px){
-
-    .body a:hover{
-        font-size: 50px;
-    }
 
     .body h1{
         font-size: 60px;
@@ -128,6 +128,17 @@
 
     .body > div > a > p:hover{
         animation-name: FntGrow3;
+        animation-duration: 750ms;
+        animation-fill-mode: forwards;
+    }
+
+    .body > div > a > p#twoLiner{
+        margin-top: 17px;
+        margin-bottom: 17px;
+    }
+
+    .body > div p#twoLiner:hover{
+        animation-name: FntGrow4;
         animation-duration: 750ms;
         animation-fill-mode: forwards;
     }
@@ -213,20 +224,20 @@
 @keyframes FntGrow4 {
     0%
     {
-        font-size: 50px;
-        margin-top: 40px;
-        margin-bottom: 40px;
+        font-size: 40px;
     }
     50%
     {
-        font-size: 55px;
+        font-size: 45px;
         color: rgb(128, 128, 128);
         background-color: rgba(0, 0, 0, 0.479);
     }
     100%
     {
-        font-size: 60px;
+        font-size: 47px;
         color: rgb(255, 255, 255);
         background-color: rgb(0, 0, 0);
+        margin-top: 7px;
+        margin-bottom: 7px;
     }
 }

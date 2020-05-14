@@ -22,7 +22,7 @@
 }
 
 :root{
-    --main-color: rgb(31, 151, 31);
+    --main-color: rgb(0, 170, 0);
 }
 
 @media only screen and (min-width: 600px){
@@ -31,7 +31,7 @@
     body{
         margin: 0px;
         font-family: 'plaza';
-        background-color: white;
+        background-color: blue;
     }
 
     /*this is the header*/
@@ -131,7 +131,7 @@
     }
     
     header li a{
-        padding: 20px;
+        padding: 30px;
     }
 
 }

@@ -54,6 +54,9 @@
 
     /*tells the bio text in the content section to be at the left side of the section*/
     .bio{
+        background-color: var(--main-color);
+        border-radius: 5px;
+        padding: 10px;
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 2;

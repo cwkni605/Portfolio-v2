@@ -41,6 +41,7 @@
         border-radius: 5px;
         width: 95%;
         box-shadow: 3px 3px 3px var(--shadow-color);
+        height: 275px;
     }
 
     .body h1{
@@ -95,6 +96,7 @@
         text-align: center;
         background: var(--main-color);
         margin-bottom: 10px;
+        height: 290px;
     }
 
     .body > div img{
@@ -120,6 +122,12 @@
         animation-fill-mode: forwards;
     }
 
+    .body a:hover p#twoLiner{
+        animation-name: FntGrow4;
+        animation-duration: 750ms;
+        animation-fill-mode: forwards;
+    }
+
     .body > div:nth-of-type(odd){
         border-radius: 5px;
         clear: both;
@@ -138,7 +146,10 @@
         animation-duration: 750ms;
         animation-fill-mode: forwards;
     }
-    .body > div > a > p#twoLiner{
+    .body > div > a > p#twoLiner:hover{
+        animation-name: FntGrow4;
+        animation-duration: 750ms;
+        animation-fill-mode: forwards;
         margin-top: 12px;
         margin-bottom: 12px;
     }
@@ -181,7 +192,7 @@
     }
 
     .body > div > a > p:hover{
-        animation-name: FntGrow4;
+        animation-name: FntGrow3;
         animation-duration: 750ms;
         animation-fill-mode: forwards;
     }
@@ -191,7 +202,7 @@
     }
 
     .body > div p#twoLiner:hover{
-        animation-name: FntGrow4;
+        animation-name: FntGrow3;
         animation-duration: 750ms;
         animation-fill-mode: forwards;
     }
@@ -214,7 +225,7 @@
     }
 
     .body a:hover p{
-        animation-name: FntGrow4;
+        animation-name: FntGrow3;
         animation-duration: 750ms;
         animation-fill-mode: forwards;
     }
@@ -256,45 +267,21 @@
         font-size: 35px;
         color: rgb(128, 128, 128);
         background-color: rgba(0, 0, 0, 0.479);
-        margin-top: 15px;
-        margin-bottom: 30px;
+        margin-top: 27px;
+        margin-bottom: 28px;
     }
     100%
     {
         font-size: 37px;
         color: rgb(255, 255, 255);
         background-color: rgb(0, 0, 0);
-        margin-top: 0px;
-        margin-bottom: 0px;
+        margin-top: 25px;
+        margin-bottom: 26px;
     }
 }
 
 /*this is the animation for the large screen*/
 @keyframes FntGrow3 {
-    0%
-    {
-        font-size: 40px;
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-    50%
-    {
-        font-size: 45px;
-        color: rgb(128, 128, 128);
-        background-color: rgba(0, 0, 0, 0.479);
-    }
-    100%
-    {
-        font-size: 50px;
-        color: rgb(255, 255, 255);
-        background-color: rgb(0, 0, 0);
-        margin-top: 35px;
-        margin-bottom: 30px;
-    }
-}
-
-/*this is the animation for the double lined boxes in the large screen*/
-@keyframes FntGrow4 {
     0%
     {
         font-size: 30px;
@@ -310,5 +297,31 @@
         font-size: 37px;
         color: rgb(255, 255, 255);
         background-color: rgb(0, 0, 0);
+    }
+}
+
+/*this is the animation for the double lined boxes in the small screen*/
+@keyframes FntGrow4 {
+    0%
+    {
+        font-size: 30px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    50%
+    {
+        font-size: 35px;
+        color: rgb(128, 128, 128);
+        background-color: rgba(0, 0, 0, 0.479);
+        margin-top: 10px;
+        margin-bottom: 28px;
+    }
+    100%
+    {
+        font-size: 37px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 }

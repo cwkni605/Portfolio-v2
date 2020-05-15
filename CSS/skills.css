@@ -23,11 +23,30 @@
 
 @media only screen and (min-width: 600px){
 
+    .header{
+        text-align: center;
+        font-family: 'open';
+        font-size: 2em;
+    }
+
     .body{
         margin: auto;
         font-family: 'open';
         font-size: 25px;
         width:100%;
+    }
+
+    .skillBio{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: var(--main-color);
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 90%;
+        height: max-content;
+        border-radius: 5px;
+        text-align: justify;
     }
 
     .body > table{
@@ -37,6 +56,7 @@
         background: var(--main-color);
         border-collapse: collapse;
         box-shadow: 3px 3px 3px var(--shadow-color);
+        border-radius: 5px;
     }
 
     .body th{
@@ -48,7 +68,7 @@
         border-top: solid black 2px;
     }
 
-    img{
+    .body > table img{
         width: 40px;
     }
 }
@@ -56,34 +76,59 @@
 @media only screen and (min-width: 768px){
 
     .body{
-        font-size: 35px;
+        font-size: 2.4em;
         width:80%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: fit-content max-content;
     }
 
     .body > table{
         border: solid black 2px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        border-radius: 5px;
+        margin-bottom: 25px;
     }
 
     .body th{
         border-right: solid black 2px;
     }
 
-    img{
+    .body > table img{
         width: 60px;
     }
 
+    .skillBio{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .skillBio p{
+        margin: 0px;
+    }
 }
 
 @media only screen and (min-width: 992px){
 
     .body{
-        font-size: 50px;
-        width:80%;
+        font-size: 2.4em;
+        width:95%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
     }
 
     table{
         border: solid black 3px;
         border-collapse: collapse;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
     }
 
     .body th{
@@ -100,37 +145,43 @@
         padding: 0px;
     }
 
-    .body table:hover td{
+    .body > table:hover td{
         width: 14%;
         transition: 2s;
     }
 
-    .body table:hover th{
+    .body > table:hover th{
         width:35%;
         transition: 2s;
     }
 
-    img{
+    .body > table img{
         width: 0px;
         transition: 2s;
     }
 
-    .body table:hover img{
-        width: 150px;
+    .body > table:hover img{
+        width: 100%;
         transition: 2s;
     }
 
-    #filled {
+    #filled{
         animation-name: colorful;
         animation-duration: 7s;
         animation-iteration-count: infinite;
         
     }
     
-    .end
-    {
+    .end{
         border-top-right-radius: 50%;
         border-bottom-right-radius: 50%;
     }
 
+    .skillBio{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        text-align: left;
+    }
 }

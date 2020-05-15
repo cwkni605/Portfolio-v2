@@ -29,6 +29,61 @@
 
 /*the base setup for all screens bigger than 600px and the specialization for the slightly bigger screen.*/
 @media only screen and (min-width: 600px){
+    .body{
+        display: grid;
+        grid-template-columns:  2fr 1fr max-content 2fr;
+        grid-template-rows: min-content max-content;
+        margin: auto;
+        padding: 10px;
+    }
+
+    /*tells the header text in the content section to center and be at the top*/
+    .header{
+        text-align: left;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    /*tells the image in the content section to be at the right side of the section*/
+    .MiiImg {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        width: 60px;
+    }
+
+    /*centers the image in its assiangined area and makes it fill the width of its alotted area*/
+    .MiiImg img{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 100%;
+    }
+
+    /*tells the bio text in the content section to be at the left side of the section*/
+    .bio{
+        background-color: var(--main-color);
+        border-radius: 5px;
+        padding: 10px;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        box-shadow: 3px 3px 3px var(--shadow-color);
+    }
+
+    .bio h2{
+        text-align: center;
+    }
+}
+
+/*the overides for all screens bigger than 768px*/
+@media only screen and (min-width: 750px){
 
     /*sets up the grid layout and background for the content section of the site*/
     .body{
@@ -40,7 +95,7 @@
         width: 90%;
         background: linear-gradient(rgba(83, 83, 83, 0.7));
         border-radius: 5px;
-        font-size: 20px;
+        font-size: 1.4em;
     }
 
     /*tells the header text in the content section to center and be at the top*/
@@ -69,6 +124,7 @@
         grid-column-end: 3;
         grid-row-start: 2;
         grid-row-end: 3;
+        width: 100%;
     }
 
     /*centers the image in its assiangined area and makes it fill the width of its alotted area*/
@@ -78,16 +134,8 @@
     }
 }
 
-/*the overides for all screens bigger than 768px*/
-@media only screen and (min-width: 768px){
-    /*it changes the font to fit the bigger screen*/
-    .body{
-        font-size: 25px;
-    }
-}
-
 /*the base setup for all screens bigger than 992px and the specialization for the smaller screen.*/
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 900px){
 
     /*sets up a new grid to organize the site differently*/
     .body{
@@ -146,10 +194,16 @@
 /*this tis the media tag for screens of my size (BIGG) or 1400px*/
 @media only screen and (min-width: 1400px){
 
+    /*tells the bio to be smaller*/
+    .bio{
+        width: 70%;
+        margin-left: 15%;
+    }
+
     /*tells the bio content text to have less width and to align acordingly*/
     .bio > p{
-        width: 68%;
-        margin-left: 16%;
+        margin-left: 6%;
+        margin-right: 6%;
         text-align: left;
     }
 }

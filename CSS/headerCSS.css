@@ -22,7 +22,9 @@
 }
 
 :root{
-    --main-color: rgb(0, 170, 0);
+    --main-color: rgb(185, 185, 185);
+    --header-color: rgb(216, 216, 216);
+    --shadow-color: rgb(88, 88, 88);
 }
 
 @media only screen and (min-width: 600px){
@@ -31,21 +33,26 @@
     body{
         margin: 0px;
         font-family: 'plaza';
-        background-color: blue;
+        background-color: rgb(129, 129, 129);
     }
 
     /*this is the header*/
     header{
         font-family: 'righteous';
         margin: 2%;
-        background: var(--main-color);
-        border-radius: 10px;
+        margin-top: 0px;
+        background: var(--header-color);
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
         padding: 5px;
+        box-shadow: 5px 5px 10px var(--shadow-color);
+        transition-duration: 0s;
     }
     
     header ul{
         display: flex;
         justify-content: space-evenly;
+        padding: 0px;
     }
 
     header li{
@@ -73,24 +80,15 @@
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-        background: var(--main-color);
+        background: var(--header-color);
         color: black;
         width: max-content;
     }
-
 }
 
 @media only screen and (min-width: 768px){
 
     /*this is the header*/
-    
-    header{
-        margin: 2%;
-        background: var(--main-color);
-        border-radius: 10px;
-        padding: 5px;
-    }
-
     header li{
         display: inline;
         margin: 0px;

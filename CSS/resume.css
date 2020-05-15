@@ -37,16 +37,18 @@
         font-family: 'open';
         text-align: center;
         background: var(--main-color);
-        border-radius: 50px;
+        border-radius: 3px;
         width: fit-content;
         margin-left: auto;
         margin-right: auto;
+        box-shadow: 3px 3px 3px var(--shadow-color);
     }
 
+    /**/
     .body a
     {
         background-color: rgb(255, 255, 255);
-        border-radius: 2px;
+        border-radius: 5px;
     }
 }
 
@@ -69,14 +71,12 @@
         text-align: left;
         padding: 30px;
         background: var(--main-color);
-        border-radius: 5px;
     }
 
     h1
     {
         font-size: 3em;
         background: var(--main-color);
-        border-radius: 5px;
         width: fit-content;
         margin-left: auto;
         margin-right: auto;
@@ -87,7 +87,6 @@
     {
         font-size: 2em;
         background: var(--main-color);
-        border-radius: 5px;
         width: max-content;
         margin-left: auto;
         margin-right: auto;
@@ -95,9 +94,8 @@
 
     .body > h3
     {
-        font-size: 20px;
+        font-size: 1.5em;
         background: var(--main-color);
-        border-radius: 5px;
         width: fit-content;
         margin-left: auto;
         margin-right: auto;
@@ -131,6 +129,6 @@
 
     .body > h3
     {
-        font-size: 25px;
+        font-size: 2.3em;
     }
 }

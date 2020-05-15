@@ -34,7 +34,10 @@
         grid-template-columns:  2fr 1fr max-content 2fr;
         grid-template-rows: min-content max-content;
         margin: auto;
-        padding: 10px;
+        padding: 0px;
+        margin: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     /*tells the header text in the content section to center and be at the top*/
@@ -62,19 +65,20 @@
         margin-left: auto;
         margin-right: auto;
         width: 100%;
-        height: 100%;
     }
 
     /*tells the bio text in the content section to be at the left side of the section*/
     .bio{
         background-color: var(--main-color);
         border-radius: 5px;
-        padding: 10px;
+        padding: 20px;
+        padding-right: 10px;
         grid-column-start: 1;
         grid-column-end: 5;
         grid-row-start: 2;
         grid-row-end: 3;
         box-shadow: 3px 3px 3px var(--shadow-color);
+        font-size: 1.5em;
     }
 
     .bio h2{
@@ -142,7 +146,7 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: fit-content 2fr 1fr;
-        font-size: 30px;
+        font-size: 2.4em;
     }
 
     /*tells the header text in the content section to be in the top space and centered*/
@@ -160,7 +164,7 @@
         grid-column-end: 2;
         grid-row-start: 3;
         grid-row-end: 4;
-        font-size: 40px;
+        font-size: 1em;
     }
 
     /*the specific rules for the content text within the bio*/

@@ -97,7 +97,6 @@
         margin: auto;
         padding: 10px;
         width: 90%;
-        background: linear-gradient(rgba(83, 83, 83, 0.7));
         border-radius: 5px;
         font-size: 1.4em;
     }
@@ -134,7 +133,8 @@
     /*centers the image in its assiangined area and makes it fill the width of its alotted area*/
     .MiiImg img{
         margin: auto;
-        width: 100%;
+        width: 98%;
+        margin-left: 2%;
     }
 }
 
@@ -189,8 +189,8 @@
 
     /*the the image what size it should be and how to center itself*/
     .MiiImg img{
-        margin-left: 35%;
-        width: 30%;
+        margin-left: 33%;
+        width: 33%;
     }
 
 }

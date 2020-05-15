@@ -83,7 +83,7 @@
 }
 
 /*the overides for all screens bigger than 768px*/
-@media only screen and (min-width: 750px){
+@media only screen and (min-width: 768px){
 
     /*sets up the grid layout and background for the content section of the site*/
     .body{
@@ -135,7 +135,7 @@
 }
 
 /*the base setup for all screens bigger than 992px and the specialization for the smaller screen.*/
-@media only screen and (min-width: 900px){
+@media only screen and (min-width: 992px){
 
     /*sets up a new grid to organize the site differently*/
     .body{

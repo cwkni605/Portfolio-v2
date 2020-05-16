@@ -1,3 +1,9 @@
+/*Author: Connor Knight*/
+
+/*This is the css for the contact me page*/
+
+/*All possible fonts that can be used are defined here*/
+
 @font-face{
     font-family: 'plaza';
     src:
@@ -23,6 +29,7 @@
 
 @media only screen and (min-width: 600px){
 
+    /*styles the content body*/
     .body{
         text-align: center;
         margin: auto;
@@ -33,7 +40,7 @@
         box-shadow: 3px 3px 3px var(--shadow-color);
     }
 
-    /*iframe_____________________________________________________________*/
+    /*iframe stuff*/
 
     .mapouter{
         margin: 0px;
@@ -56,10 +63,16 @@
     h2{
         font-family: 'open';
     }
+
+    /*makes some of the content invisible*/
+    strong{
+        visibility: hidden;
+    }
 }
 
 @media only screen and (min-width: 768px){
 
+    /*styles the content body*/
     .body{
         text-align: center;
         margin: auto;
@@ -73,7 +86,7 @@
         margin: 5px;
     }
 
-    /*iframe_____________________________________________________________*/
+    /*iframe stuff*/
 
     .mapouter{
         margin: 0px;
@@ -92,10 +105,15 @@
         height: 500px;
     }
 
+    /*makes the bonus content visible*/
+    strong{
+        visibility: visible;
+    }
 }
 
 @media only screen and (min-width: 992px){
 
+    /*styles the content body*/
     .body{
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -105,7 +123,7 @@
         font-size: 1.4em;
     }
 
-    /*iframe_____________________________________________________________*/
+    /*iframe mumbo jumbo that is dumb and triple layered*/
 
     .mapouter{
         grid-column-start: 1;
@@ -118,19 +136,22 @@
         height: 100%;
     }
 
+    /*outer box*/
     .mapouter:hover{
         opacity: 100%;
         transition: 0.5s;
     }
 
+    /*middle box*/
     .gmap_canvas{
         padding: 0px;
         margin: 0px;
         height: 100%;
     }
 
-    iframe{
-        height: 550px;
+    /*inner box*/
+    #gmap_canvas{
+        height: 100%;
     }
 
     /*this is the side content that is on the side*/
@@ -142,17 +163,22 @@
         height: max-content;
     }
 
+    /*formats the first h2*/
     .body h2:first-of-type{
         margin-top: 20%;
     }
 
-    .body h2:first-of-type a{
-    }
-    
-    h2{
+    /*tells the last h2 to be in its own box*/
+    h2:last-of-type{
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 2;
         grid-row-end: 3;
+        text-align: center;
+    }
+
+    /*makes sure the paid DLC is not visible*/
+    strong{
+        visibility: hidden;
     }
 }

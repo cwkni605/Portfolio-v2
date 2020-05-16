@@ -1,3 +1,9 @@
+/*Author: Connor Knight*/
+
+/*This is the css for the site list page*/
+
+/*All possible fonts that can be used are defined here*/
+
 @font-face{
     font-family: 'plaza';
     src:
@@ -23,17 +29,20 @@
 
 @media only screen and (min-width: 600px){
 
+    /*formats the content body*/
     .body{
         width: 90%;
         margin: auto;
         font-size: 2em;
     }
 
+    /*styles the paragraphs in the content body*/
     .body p{
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
     }
 
+    /*formats the div items*/
     .body > div{
         text-align: center;
         background: var(--main-color);
@@ -44,22 +53,26 @@
         height: 275px;
     }
 
+    /*formats the h1s in the content body*/
     .body h1{
         text-align: center;
         font-size: 1em;
     }
 
+    /*formats the imgs in the divs*/
     .body > div img{
         width: 100%;
         border-radius: 5px;
         height: 200px;
     }
 
+    /*styles the links in the content body*/
     .body a:visited, .body a:link{
         color: black;
         text-decoration: none;
     }
 
+    /*fomats the links and gives them an animation*/
     .body a:hover, a:active{
         color: rgb(255, 255, 255);
         transition: 1s;
@@ -67,12 +80,14 @@
         text-decoration: none;
     }
 
+    /*gives the paragraph tags animation when you hover over it*/
     .body > div > a > p:hover{
         animation-name: FntGrow1;
         animation-duration: 750ms;
         animation-fill-mode: forwards;
     }
 
+    /*special formating for bigger text*/
     .body > div > a > p#twoLiner{
         margin-top: 9px;
         margin-bottom: 9px;
@@ -81,16 +96,19 @@
 
 @media only screen and (min-width: 768px){
 
+    /*formats the body*/
     .body{
         width: 90%;
         margin: auto;
     }
 
+    /*styles the h1s*/
     .body h1{
         font-size: 40px;
         text-align: center;
     }
 
+    /*styles the div items in general*/
     .body > div{
         font-size: 30px;
         text-align: center;
@@ -99,35 +117,41 @@
         height: 290px;
     }
 
+    /*styles the imgs in the div items*/
     .body > div img{
         width: 100%;
         border-radius: 5px;
         height: 190px;
     }
 
+    /*styles the links in prep for animation*/
     .body a:visited, .body a:link{
         color: black;
         text-decoration: none;
     }
 
+    /*animates the links*/
     .body a:hover, .body a:active{
         color: rgb(255, 255, 255);
         transition: 1s;
         background-color: black;
     }
 
+    /*animates the p tags*/
     .body a:hover p{
         animation-name: FntGrow2;
         animation-duration: 750ms;
         animation-fill-mode: forwards;
     }
 
+    /*animates the two lined p tags*/
     .body a:hover p#twoLiner{
         animation-name: FntGrow4;
         animation-duration: 750ms;
         animation-fill-mode: forwards;
     }
 
+    /*styles the left items*/
     .body > div:nth-of-type(odd){
         border-radius: 5px;
         clear: both;
@@ -135,17 +159,21 @@
         float: left;
     }
 
+    /*styles the right items*/
     .body > div:nth-of-type(even){
         border-radius: 5px;
         width: 49%;
         float: right;
     }
 
+    /*more animation of p tags*/
     .body > div > a > p:hover{
         animation-name: FntGrow2;
         animation-duration: 750ms;
         animation-fill-mode: forwards;
     }
+
+    /*more animation of p tags but for double lined p tags*/
     .body > div > a > p#twoLiner:hover{
         animation-name: FntGrow4;
         animation-duration: 750ms;
@@ -157,19 +185,23 @@
 
 @media only screen and (min-width: 992px){
 
+    /*set body width*/
     .body{
         width: 90%;
     }
 
+    /*animates the link*/
     .body a:hover{
         background-color: var(--main-color);
         border-radius: 5px;
     }
 
+    /*resizes the h1 elements*/
     .body h1{
         font-size: 60px;
     }
 
+    /*styles the div items*/
     .body div{
         font-size: 40px;
         margin-right: 0px;
@@ -183,30 +215,36 @@
         display: inline-flex;
     }
 
+    /*styles the div's img*/
     .body > div img{
         height: 250px;
     }
 
+    /*prepares p tag for animation*/
     .body > div > a > p{
         margin-top: 0px;
     }
 
+    /*animates p tag*/
     .body > div > a > p:hover{
         animation-name: FntGrow3;
         animation-duration: 750ms;
         animation-fill-mode: forwards;
     }
 
+    /*prepares two lined p tag for animation*/
     .body > div > a > p#twoLiner{
         margin-top: 0px;
     }
 
+    /*animates two lined p tag*/
     .body > div p#twoLiner:hover{
         animation-name: FntGrow3;
         animation-duration: 750ms;
         animation-fill-mode: forwards;
     }
 
+    /*reverts div to normal*/
     .body > div:nth-of-type(odd){
         border-radius: 5px;
         clear: none;
@@ -216,6 +254,7 @@
         height: 350px;
     }
 
+    /*reverts div to normal*/
     .body > div:nth-of-type(even){
         border-radius: 5px;
         width: 400px;
@@ -224,6 +263,7 @@
         height: 350px;
     }
 
+    /*animates p tag through a tag*/
     .body a:hover p{
         animation-name: FntGrow3;
         animation-duration: 750ms;

@@ -44,7 +44,7 @@
         box-shadow: 3px 3px 3px var(--shadow-color);
     }
 
-    /**/
+    /*sets the links dockground and ands a curved edge*/
     .body a
     {
         background-color: rgb(255, 255, 255);
@@ -54,6 +54,7 @@
 
 @media only screen and (min-width: 768px){
 
+    /*sets up a grid for this size of screen*/
     .body{
         width: 80%;
         display: grid;
@@ -61,10 +62,12 @@
         grid-template-rows: 4fr 10fr 1fr;
     }
 
+    /*fixes some petty css problems*/
     .body > h1, .body > h2, .body > h3{
         height: max-content;
     }
 
+    /*tells the first h1 and h2 tag to be in the same box in the grid*/
     .body h1:first-of-type, .body h2:first-of-type{
         grid-column-start: 1;
         grid-column-end: 2;
@@ -72,21 +75,25 @@
         grid-row-end: 2;
     }
 
+    /*formats the h2 that was previosly mentioned to fit properly*/
     .body h2:first-of-type{
         margin-top: 20%;
     }
 
-    .body > h1:nth-last-of-type(2), .body > h3{
+    /*tells the second h1 and the standalone h3 to be in the same box*/
+    .body > h1:nth-of-type(2), .body > h3{
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 2;
     }
 
+    /*formats the h3 that was previosly mentioned to fit properly*/
     .body > h3{
         margin-top: 20%;
     }
 
+    /*tells the last h1 and the unordered list to be in the same box*/
     .body > h1:last-of-type, .body > ul{
         grid-column-start: 1;
         grid-column-end: 3;
@@ -94,11 +101,13 @@
         grid-row-end: 3;
     }
 
+    /*formats the ul to fit and not cover the h1 and not be tall as frick*/
     .body > ul{
         margin-top: 10%;
         height: min-content;
     }
 
+    /*tells the download link to be in the last box and be centered*/
     .body > a{
         grid-column-start: 1;
         grid-column-end: 3;
@@ -111,6 +120,7 @@
 
 @media only screen and (min-width: 992px){
 
+    /*reorganizes the the grid to be different*/
     .body
     {
         width: 90%;
@@ -119,12 +129,14 @@
         grid-template-rows: 5em 2fr 7fr 1fr;
     }
 
+    /*formats the ul*/
     .body > ul
     {
         text-align: left;
         padding: 30px;
     }
 
+    /*formats the h1s*/
     .body > h1
     {
         font-size: 3em;
@@ -134,6 +146,7 @@
         margin-bottom: 10px;
     }
 
+    /*formats the h2 to be centered*/
     .body > h2
     {
         font-size: 2em;
@@ -143,6 +156,7 @@
         margin-top: unset;
     }
 
+    /*formats the h3*/
     .body > h3
     {
         font-size: 1.5em;
@@ -151,6 +165,7 @@
         margin-right: auto;
     }
     
+    /*tells the first h1 which box it should be in*/
     .body h1:first-of-type{
         grid-column-start: 1;
         grid-column-end: 3;
@@ -161,26 +176,31 @@
         font-size: 4em;
     }
 
+    /*tells the first h2 to be existn't*/
     .body h2:first-of-type{
         margin-top: 20%;
         visibility: hidden;
     }
 
-    .body > h1:nth-last-of-type(2), .body > h3{
+    /*tells the seccond h1 and standalone h3 which box they will be in*/
+    .body > h1:nth-of-type(2), .body > h3{
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 2;
         grid-row-end: 3;
     }
 
-    .body > h1:nth-last-of-type(2){
+    /*fomats the second h1*/
+    .body > h1:nth-of-type(2){
         margin-top: 0px;
     }
 
+    /*formats the standalone h3*/
     .body > h3{
         margin-top: 6%;
     }
 
+    /*tells the last h1 and the unordered list to be in the second to last box*/
     .body > h1:last-of-type, .body > ul{
         grid-column-start: 1;
         grid-column-end: 3;
@@ -188,11 +208,13 @@
         grid-row-end: 4;
     }
 
+    /*formats the ul*/
     .body > ul{
         margin-top: 10%;
         height: min-content;
     }
 
+    /*way to much to format a link to be centered and in the right box*/
     .body > a{
         grid-column-start: 1;
         grid-column-end: 3;
@@ -209,10 +231,12 @@
 
 @media only screen and (min-width: 1400px){
 
+    /*makes the first h2 visable again*/
     .body h2:first-of-type{
         visibility: visible;
     }
 
+    /*formats a new grid again*/
     .body
     {
         width: 70%;
@@ -221,10 +245,24 @@
         grid-template-rows: 6.5fr 10fr 1fr;
     }
 
+    /*formats the h1s, h2s, and the h3s*/
     .body > h1, .body > h2, .body > h3{
         height: max-content;
     }
 
+    /*resizes the h1s*/
+    .body > h1
+    {
+        font-size: 3.25em;
+    }
+
+    /*resizes the standalone h3*/
+    .body > h3
+    {
+        font-size: 1.8em;
+    }
+
+    /*tells the first h1 and first h2 to be in their box*/
     .body h1:first-of-type, .body h2:first-of-type{
         grid-column-start: 1;
         grid-column-end: 2;
@@ -232,21 +270,25 @@
         grid-row-end: 2;
     }
 
+    /*formats the previosly mentioned h2*/
     .body h2:first-of-type{
         margin-top: 20%;
     }
 
-    .body > h1:nth-last-of-type(2), .body > h3{
+    /*tells the second h1 and the standalone h3 to be in the same box*/
+    .body > h1:nth-of-type(2), .body > h3{
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 2;
     }
 
+    /*formats the previosly mentioned h3*/
     .body > h3{
         margin-top: 20%;
     }
 
+    /*tells the last h1 and the unordered list to be in the same box*/
     .body > h1:last-of-type, .body > ul{
         grid-column-start: 1;
         grid-column-end: 3;
@@ -254,11 +296,16 @@
         grid-row-end: 3;
     }
 
+    /*formats the previosly mentioned ul*/
     .body > ul{
         margin-top: 10%;
         height: min-content;
+        text-align: left;
+        padding: 30px;
+        padding-top: 10px;
     }
 
+    /*formats and tells the link where it allowed to be*/
     .body > a{
         grid-column-start: 1;
         grid-column-end: 3;
@@ -268,23 +315,13 @@
         margin: auto;
     }
 
-    .body > ul
-    {
-        text-align: left;
-        padding: 30px;
-        padding-top: 10px;
-    }
-
-    h1
+    /*formats the h1s*/
+    .body > h1
     {
         font-size: 3.25em;
     }
 
-    h2
-    {
-        font-size: 2.5em;
-    }
-
+    /*formats the standalone h3*/
     .body > h3
     {
         font-size: 1.8em;

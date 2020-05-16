@@ -1,3 +1,9 @@
+/*Author: Connor Knight*/
+
+/*This is the css for the skills page*/
+
+/*All possible fonts that can be used are defined here*/
+
 @font-face{
     font-family: 'plaza';
     src:
@@ -23,12 +29,14 @@
 
 @media only screen and (min-width: 600px){
 
+    /*formats a content header*/
     .header{
         text-align: center;
         font-family: 'open';
         font-size: 2em;
     }
 
+    /*formats the content body*/
     .body{
         margin: auto;
         font-family: 'open';
@@ -36,6 +44,7 @@
         width:100%;
     }
 
+    /*formats the skills description thing*/
     .skillBio{
         width: 95%;
         margin-left: auto;
@@ -49,6 +58,7 @@
         text-align: justify;
     }
 
+    /*formats the table*/
     .body > table{
         border: solid black 2px;
         border-radius: 5px;
@@ -59,15 +69,18 @@
         border-radius: 5px;
     }
 
+    /*formats the table header elements*/
     .body th{
         border-right: solid black 1px;
     }
 
+    /*puts a border around the filled in spots on the table excluding the end spots*/
     #filled:not(.end){
         border-bottom: solid black 2px;
         border-top: solid black 2px;
     }
 
+    /*formats the imgs inside the table*/
     .body > table img{
         width: 40px;
     }
@@ -75,6 +88,7 @@
 
 @media only screen and (min-width: 768px){
 
+    /*formats the content body with a grid*/
     .body{
         font-size: 2.4em;
         width:80%;
@@ -83,6 +97,7 @@
         grid-template-rows: fit-content max-content;
     }
 
+    /*tells the table where to go and styles it*/
     .body > table{
         border: solid black 2px;
         grid-column-start: 1;
@@ -93,14 +108,17 @@
         margin-bottom: 25px;
     }
 
+    /*styles the tables table header elements*/
     .body th{
         border-right: solid black 2px;
     }
 
+    /*style the tables imgs to fit better*/
     .body > table img{
         width: 60px;
     }
 
+    /*stations the skills decription where it belongs*/
     .skillBio{
         grid-column-start: 1;
         grid-column-end: 2;
@@ -108,6 +126,7 @@
         grid-row-end: 3;
     }
 
+    /*formats the skills decription text to have no margin*/
     .skillBio p{
         margin: 0px;
     }
@@ -115,6 +134,7 @@
 
 @media only screen and (min-width: 992px){
 
+    /*formats the content body with a different grid*/
     .body{
         font-size: 2.4em;
         width:95%;
@@ -122,6 +142,7 @@
         grid-template-rows: 1fr;
     }
 
+    /*tells the table where to go in the new grid*/
     table{
         border: solid black 3px;
         border-collapse: collapse;
@@ -131,6 +152,7 @@
         grid-row-end: 2;
     }
 
+    /*formats the tables table header elements*/
     .body th{
         border-right: solid black 3px;
         width: 100%;
@@ -139,32 +161,38 @@
         padding: 0px;
     }
 
+    /*formats the table definition elements*/
     td{
         width: 0%;
         transition: 2s;
         padding: 0px;
     }
 
+    /*adds an animation the table definition when you hover over it*/
     .body > table:hover td{
         width: 14%;
         transition: 2s;
     }
 
+    /*adds an animation the table header when you hover over it*/
     .body > table:hover th{
         width:35%;
         transition: 2s;
     }
 
+    /*formats the imgs in the table to work with the animation*/
     .body > table img{
         width: 0px;
         transition: 2s;
     }
 
+    /*this is an animation that is to work with the previos animation*/
     .body > table:hover img{
         width: 100%;
         transition: 2s;
     }
 
+    /*details the filled items*/
     #filled{
         animation-name: colorful;
         animation-duration: 7s;
@@ -172,11 +200,13 @@
         
     }
     
+    /*details the end items*/
     .end{
         border-top-right-radius: 50%;
         border-bottom-right-radius: 50%;
     }
 
+    /*tells the skills decription where to go*/
     .skillBio{
         grid-column-start: 2;
         grid-column-end: 3;

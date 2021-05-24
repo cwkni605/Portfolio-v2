@@ -1,0 +1,191 @@
+/*Author: Connor Knight*/
+
+/*This is the css for the header and footer on all pages, as well as the background color. It also creates globle color variibles for the rest of the pages to set a uniform color palet*/
+
+/*All possible fonts that can be used are defined here*/
+
+@font-face{
+  font-family: 'plaza';
+  src:
+      url('fonts/Plaza/Plaza\ Regular.ttf') format('truetype');  
+} 
+@font-face{
+  font-family: 'open';
+  src: 
+      url('fonts/Open-SANS/OpenSans-Bold.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'righteous';
+  src: 
+      url('fonts/Righteous/Righteous-Regular.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'web';
+  src: 
+      url('fonts/TitilliumWeb/TitilliumWeb-Regular.ttf') format('truetype');
+}
+
+/*set universal variable colors*/
+:root{
+  --main-color: rgb(185, 185, 185);
+  --header-color: rgb(216, 216, 216);
+  --shadow-color: rgb(88, 88, 88);
+}
+
+iframe
+{
+    margin: 0px;
+    border: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 96%;
+    height: 8rem;
+    position: absolute;
+    display: flex;
+}
+
+@media only screen and (min-width: 600px){
+
+  /*body background and font for the entire page*/
+  body{
+      margin: 0px;
+      font-family: 'plaza';
+      background-color: rgb(129, 129, 129);
+  }
+
+  /*this is the header*/
+  header{
+      font-family: 'righteous';
+      margin: 2%;
+      margin-top: 0px;
+      background: var(--header-color);
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      padding: 0px;
+      box-shadow: 5px 5px 10px var(--shadow-color);
+      transition-duration: 0s;
+  }
+  
+  /*styles the ul*/
+  header ul{
+      display: flex;
+      justify-content: space-evenly;
+      padding: 2.5rem;
+      position: sticky;
+      margin-top: 0px;
+      margin-bottom: 0px;
+  }
+
+  /*styles the li*/
+  header li{
+      display: inline;
+      margin: 0px;
+      padding: 0px;
+  }
+
+  /*styles the link*/
+  header li a{
+      color: black;
+      text-decoration: none;
+      padding: 5px;
+  }
+
+  /*animates the link on a hover*/
+  header li a:hover{
+      border-radius: 5px;
+      background: rgba(172, 172, 172, 0.5);
+  }
+
+  /*this is the footer*/
+  footer{
+      clear: both;
+      border-radius: 5px;
+      font-family: 'righteous';
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      background: var(--header-color);
+      color: black;
+      width: max-content;
+  }
+
+  /*this styles the buttons in the footer*/
+  footer > button{
+      border-radius: 5px;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  /*this is the header*/
+  header li{
+      display: inline;
+      margin: 0px;
+      padding: 0px;
+      font-size: 30px;
+  }
+
+  /*this preps the link for animating*/
+  header li a{
+      transition-duration: 1s;
+      color: black;
+      text-decoration: none;
+      padding: 20px;
+  }
+
+  /*this animates the link*/
+  header li a:hover{
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.774);
+      transition-duration: 0s;
+  }
+
+  /*this is the footer*/
+  footer{
+      clear: both;
+      border-radius: 5px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      width: max-content;
+  }
+}
+
+@media only screen and (min-width: 992px){
+
+  /*This resizes the font for the bigger size*/
+  header{
+      font-size: 35px;
+  }
+  
+  /*this makes the buttons bigger for the bigger screen*/
+  header li a{
+      padding: 30px;
+  }
+
+}
+
+/*this is a global animation that was the back ground but was garbage so was used for other things*/
+@keyframes colorful {
+  0%
+  {
+      background: red;
+  }
+  25%
+  {
+      background: yellow;
+  }
+  50%
+  {
+      background: green;
+  }
+  75%
+  {
+      background: blue;
+  }
+  100%
+  {
+      background: red;
+  }
+}

@@ -19,7 +19,7 @@ function App() {
                 <h1 className="header">Connor Knight</h1>
                 
                 <div className="MiiImg">
-                    <img src="/resources/crest.gif" alt="NotMyCrest"></img>
+                    <img style={{borderRadius:"20px"}} src="/resources/Profile pic.jpg" alt="NotMyCrest"></img>
                 </div>
                 <div className="bio">
                     <h2>Bio</h2>
